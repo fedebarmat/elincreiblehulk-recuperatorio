@@ -1,0 +1,604 @@
+@font-face{
+   font-family: "DIN Next HC";
+   src: url("../fonts/DINNextLTPro-HeavyCondensed.ttf");
+ }
+
+*{
+margin: 0;
+padding: 0;	
+box-sizing: border-box;
+}
+
+
+
+body{
+	font-family: "DIN Next HC";
+	background-color: #1a5127;
+    color: #1a5127;
+}
+
+main{
+width: 1000px;
+height: 700px;
+background-color: #1a5127;
+margin-left: auto;
+margin-right: auto;
+box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+}
+
+header{
+display: flex;
+justify-content: space-between;
+width: 1000px;
+height: 100px;
+background-color: #000;
+align-items: center;
+}
+
+.logo-hulk{
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+section{
+width: 1000px;
+height: 550px;
+background-color: #1a5127;
+}
+
+footer{
+display: flex;
+width: 1000px;
+height: 50px;
+background-color: #000;
+justify-content: space-between;
+align-items: center;
+}
+
+
+nav a{
+    text-decoration:none;
+    color:inherit;
+    font-size: 20px;
+    font-weight: 600;
+    align-content: center;
+    } 
+
+nav li{
+    display:inline-block;
+    padding: 4px 15px;
+    margin-right: 15px;
+    background-color: transparent;
+    border:0px solid #000;
+    border-radius: 5px;
+    text-align:center;
+    color:#1a5127;  
+    }
+
+nav li:hover{
+  border: 3px solid #1a5127; 
+  color: #1a5127;
+  transition: .1s;
+}
+
+
+ .uces-marvel{
+     display: flex;
+     align-items: center;
+     justify-content: left;
+     margin-left: 15px;
+}
+
+.marvel {
+    margin-right: 5px;
+}
+
+.disneyplus{
+     display: flex;
+     align-items: center;
+     justify-content: right;
+     margin-right: 15px;
+ }
+
+ .nombre{
+    font-size: 12px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3{
+font-weight:300;
+font-size:10px;
+color:#fff;
+}
+
+/* INDEX */
+
+.section-index{
+    background-color: #3498db;
+    background-image:url(../img/hulkindex.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.increible {
+  margin-left: 20px;
+  font-size: 29px;
+  color: white;
+}
+
+.hulk {
+  font-size: 200px;
+  color: #1a5127;
+  margin-left: 15px;
+  -webkit-text-stroke: 3px #000;
+}
+
+/* ESCENAS */
+
+#article1-sinop{
+width: 550px;
+height: 545px;
+background-color: transparent;
+float: left;
+}
+
+#article2-sinop{
+width: 450px;
+height: 545px;
+background-color: #AA894F;
+float: right;
+}
+
+.titulo-interna{
+color: #000;
+font-weight:800;
+font-size: 28px;
+margin-left: 50px;
+margin-top: 5px;
+}
+
+
+.contesta{
+font-weight:400;
+font-size:14px;
+margin-left: 50px;
+margin-right: 50px;
+margin-top: 2px;
+}
+
+
+#galeria {
+margin-left: 45px;
+margin-right: auto;
+margin-top: 25px;
+margin-bottom: auto;   
+}
+
+.filter{
+    filter: blur(1px);
+}
+
+.galeria-bajada{
+    color: #000;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+
+/* PERSONAJES */
+
+.seccion-personajes{
+width: 1000px;
+height: 550px;
+background-color: #1a5127;
+padding-top: 20px;
+}
+
+.card{
+    width: 100%;
+    display: flex;
+    grid-gap: 25px 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-perfil{
+    width: 230px; 
+    padding: 10px;
+    padding-bottom: 18px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    border-radius: 20px;
+    color: #03051C;
+}
+
+.actor-title{
+    color: #000;
+    font-size: 20px;
+}
+
+.actor-name{
+    color: #fff;
+    font-size: 14px;
+}
+
+.card-nombre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 1.5px;
+}
+
+
+/* TRIVIA */
+
+#article1-trivia{
+width: 500px;
+height: 545px;
+background-color: #1a5127;
+float: left;
+}
+
+#article2-trivia{
+width: 500px;
+height: 545px;
+background-color: transparent;
+float: right;
+
+}
+
+form{
+    width: 400px;
+    padding: 5px;
+    background-color: transparent;
+    margin-left: 45px;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    border-color: #000;
+    border-style: none;
+    border-width: 0px;
+    border-radius: 20px;
+}
+
+.cajas{
+    width: 100%;
+    height: 25px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.btn{
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  width: 50%;
+  height: 40px;
+  margin-top: 5px;
+  background-color: #000;
+  border-width: 3px;
+  border-color: #000;
+  border-style: solid;
+  border-radius: 3px;
+  color: #1a5127;
+}
+
+.btn:hover {
+  background: #1a5127;
+  color: #000;
+}
+
+
+
+.contesta{
+color: #000;
+font-weight:600;
+font-size:18px;
+margin-left: 50px;
+}
+
+.pregunta{
+    color: #000;
+    font-size: 18px;
+}
+
+
+/* ----------- RESPONSIVE CELULAR ------------ */
+
+/* General */
+
+@media (min-width:  300px) and (max-width:  767px) {
+ 
+main{
+width: auto;
+}
+
+header{
+width: 100%;
+height: 80px;
+}
+
+nav li{
+
+display: flex;
+flex-direction: column;
+padding: 1px;
+}
+
+section{
+width: 100%;
+height: 1100px;
+}
+
+.titulo-interna{
+margin-left: 15px;
+font-size: 24px;
+}
+
+footer{
+width: 100%;
+height: 50px;
+position: absolute;
+}
+
+form{
+    margin-left: 10px;
+}
+
+/* INDEX */
+
+.section-index{
+background-image:url(../img/background-movil.jpg);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.boton-index {
+padding: 20px 55px; 
+font-size: 20px;
+border-radius: 12px; 
+margin-left: 70px;
+top: 55%;
+}
+
+
+/* ESCENAS */
+
+#galeria {
+margin-left: 150px; 
+margin-right: 100px; 
+}
+
+.galeria-bajada{
+    color: #000;
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+/* PERSONAJES */
+.seccion-personajes{
+width: 100%;
+height: 1100px;
+padding-top: 50px;
+padding-left: 190px;
+padding-right: 150px;
+padding-bottom: 60px;
+overflow: auto;
+}
+
+.card{
+    width: 100%;
+    display: flex;
+   
+    justify-content: center;
+}
+
+.card-perfil{
+    width: 360px; 
+    padding: 40px;
+    padding-bottom: 55px;
+}
+
+.actor-title{
+    color: #000;
+    font-size: 20px;
+}
+
+.actor-name{
+    color: #fff;
+    font-size: 14px;
+}
+
+/* TRIVIA */
+
+#article1-trivia{
+width: 100%;
+height: 600px;
+background-color: #1a5127;
+}
+
+#article2-trivia{
+width: 100%;
+height: 500px;
+background-image:url(../img/imagen-trivia.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.imagen-trivia{
+display:none !important;
+}
+
+.cajas{
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.btn{
+    width: 170px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.contesta{
+font-size:16px;
+margin-left: 15px;
+}
+
+}
+
+/* ----------- RESPONSIVE TABLET ------------ */
+
+@media (min-width:  768px) and (max-width:  991px) {
+
+main{
+width: auto;
+}
+
+header{
+width: 100%;
+height: 100px;
+}
+
+section{
+width: 100%;
+height: 1070px;
+}
+
+form{
+    width: 700px;
+
+}
+
+.cajas{
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+footer{
+width: 100%;
+height: 50px;
+position: relative;
+}
+
+
+/* INDEX */
+
+.section-index{
+background-image:url(../img/background-movil.jpg);
+background-repeat: no-repeat;
+background-position: 0 0;
+background-size: cover;
+}
+
+
+
+/* ESCENAS */
+
+#galeria {
+margin-left: 150px; 
+margin-right: 150px; 
+}
+
+.titulo-interna{
+color: #000;
+font-size:28px;
+margin-top: 5px;
+}
+
+
+/* PERSONAJES */
+.seccion-personajes{
+width: 100%;
+height: 1100px;
+padding-top: 50px;
+padding-left: 100px;
+padding-right: 100px;
+padding-bottom: 60px;
+}
+
+.card-perfil{
+    width: 280px; 
+    padding: 20px;
+    padding-bottom: 35px;
+}
+
+
+.actor-title{
+    font-size: 20px;
+}
+
+.actor-name{
+    font-size: 14px;
+}
+
+/* TRIVIA */
+
+#article1-trivia{
+width: 100%;
+height: 600px;
+background-color: #1a5127;
+}
+
+#article2-trivia{
+width: 100%;
+height: 500px;
+background-image:url(../img/imagen-trivia.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+.imagen-trivia{
+display:none !important;
+}
+
+.btn{
+    width: 160px;
+    height: 45px;
+    font-size: 18px;
+}
+
+
+}
+
+
+/* ----------- RESPONSIVE LAPTOP ------------ */
+
+@media (min-width:  992px) and (max-width:  1199px) {
+
+
+
+}
+
+
+/* ----------- RESPONSIVE LARGE ------------ */
+
+@media (min-width:  1200px) and (max-width:  1600px) {
+
+/* INDEX */
+.boton-index {
+top: 55%;
+}
+
+/* ESCENAS */
+
+/* PERSONAJES */
+.card{
+    width: 100%;
+    display: flex;
+    grid-gap: 35px 90px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* TRIVIA */
+
+
+}
